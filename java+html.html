@@ -3,15 +3,19 @@
 <head>
     <title>First java code</title>
     <script type="text/javascript">
-    function buttonclick()
+    function fn()
     {
-        alert("Chapli");
+        var un=document.getElementById("text1").value;
+        var pass=document.getElementById("text2").value;
+        document.write("<h3>Your user name is "+un+"<br>Your Password id "+pass+"</h3>");
     }
-    //click();
     </script>
 </head>
 <body>
-    <button onclick="buttonclick()">Click Me</button>
-    <h2 id=heading>Some random text</h2>
+    <h3>User Name</h3>
+    <input type="text" id="text1" placeholder="Username">
+    <h3>Password</h3>
+    <input type="Password" id="text2" placeholder="Please don't share with anyone"><br>
+    <br><br><button onclick="fn()" type="submit">Submit</button>
 </body>
 </html>
