@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark-mode{
+            background-color: black;
+            color: white;
+        }
+    </style>
+    
+</head>
+<body id="bd">
+    <p>Hii Kalp Here.</p><br>
+    <p id="kp">Kunal tu Chutiya he.</p><br>
+    <p>Kunal tu sach me chutiya he.</p><br><br>
+    <button type="button" onclick="fn()">Try it</button>
+    <script type="text/javascript">
+        function fn()
+        {
+            var b=document.body;
+            b.classList.toggle("dark-mode");
+            var a=document.getElementById("kp");
+            if(a.style.display=="none")
+            {
+                a.style.display="block";
+            }
+            else
+            {
+                a.style.display="none";
+            }
+        }
+        </script>
+</body>
+</html>
