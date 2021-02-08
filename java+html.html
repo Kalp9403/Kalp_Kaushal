@@ -16,7 +16,14 @@
     {
         var un=document.getElementById("text1").value;
         var pass=document.getElementById("text2").value;
-        document.getElementById("kp").innerHTML="<h3><b>The username is "+un+"<br>The password is "+pass+"</h3></b>";
+        if(un==pass)
+        {
+            document.getElementById("kp").innerHTML="<h3><b>Please enter password other then Username</b></h3>";
+        }
+        else{
+            document.getElementById("kp").innerHTML="<h3><b>The username is "+un+"<br>The password is "+pass+"</h3></b>";
+        }
+        
     }
     </script>
 </head>
